@@ -1,0 +1,10 @@
+# li=[3,4,6,8,4,9,1,4,5,7,9,3,4,6]
+# print(len(li))
+
+li=[1,2,3,4,5,6,1,7,1,7,1,6,5,4]
+n=len(li)
+ans=0
+for i in range(n):
+    if li[i]==1:
+        ans=ans+1
+print(ans)
