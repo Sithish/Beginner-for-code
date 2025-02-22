@@ -73,3 +73,6 @@ for i in loop:
 # range
 for i in range(0,10):
   print(i)
+
+#function
+ 
