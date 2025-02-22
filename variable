@@ -1,0 +1,4 @@
+x = 33
+y = "rio"
+print(x)
+print(y)
