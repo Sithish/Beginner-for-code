@@ -1,0 +1,13 @@
+def fun():
+    print("start the program")
+    print("good evening")
+fun()
+print("stop the program")
+
+# or
+
+
+# def table(n):
+#     for i in range(1,11):
+#         print(n,"*",i,"=",n*i)
+# table(13)
