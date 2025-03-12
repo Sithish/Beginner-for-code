@@ -1,0 +1,11 @@
+
+class Myclass:
+    def biodata(self,name,age,address,contact):
+        print("Name:",name)
+        print("Age:",age)
+        print("Address:",address)
+        print("Contact:",contact)
+
+        
+obj=Myclass()
+obj.biodata("sithish",21,"tiruttani", 6379512359)
