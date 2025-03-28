@@ -1,0 +1,157 @@
+# if(False):
+#     print("Yes")
+# else:
+#     print("No")
+
+# #comparesion operator
+# print("win"=="win")
+
+# # example2 comparesion operator
+# rcb="win"
+# if(rcb=="win"):
+#     print("esala cup namde")
+# else:
+#     print("esala cup nagii")
+
+#example3 comparesion operator
+# mehana=input("mehana died or not? ")
+# if(mehana=="died"):
+#     print("surya meets priya")
+# else:
+#     print("surya weds mehana")
+
+#example4
+# mark=int(input("Enter your mark : "))
+# if (mark>35):
+#     print("pass")
+# else:
+#     print("fail")
+
+#example
+# income=int(input("income:"))
+# if(income>7000):
+#     print("scholarship is not avaliable")
+# else:
+#     print("scholarship is avaliable")
+
+# #example
+# a=int(input())
+# if(a%3==0):
+#     print("divisible by 3")
+# else:
+#     print("not divisible by 3")
+
+#example odd or even
+# a=int(input(("enter the number")))
+# if(a%2==0):
+#     print("even")
+# else:
+#     print("odd")
+
+#example student score
+# score=int(input("enter the score: "))
+# if(score<35):
+#     print("poor student")
+# elif(score>35 and score<70):
+#     print("avg student")
+# elif(score>70 and score<100):
+#     print("good student")
+# else:
+#     print("invalid score")
+
+#example mini calculator
+# a=int(input())
+# b=int(input())
+# operation=input("add/ sub/mul/div :")
+# if(operation=="add"):
+#     print(a+b)
+# elif(operation=="sub"):
+#     print(a-b)
+# elif(operation=="mul"):
+#     print(a*b)
+# elif(operation=="div"):
+#     print(a/b)
+# else:
+#     print("invalid operation")
+
+#example
+# persentage=int(input())
+# if(persentage>70):
+#     name=input("enter your name : ")
+#     age=input("enter your age : ")
+#     dept=input("enter your dept : ")
+
+#     print("your eligible")
+# else:
+#     print("not eligible")
+
+
+#example
+# salary=int(input("Enter your salary :"))
+# age=int(input("Enter your age :"))
+# if(salary>=20000 or age<=25):
+#     loan=int(input("how much your loan amt ? "))
+#     if(loan > 50000):
+#         print("max loan amt is 50000")
+#     else:
+#         print("your eligble for loan")
+# else:
+#     print("not eligible for loan")
+
+#example
+# a=int(input())
+# b=int(input())
+# c=int(input())
+# d=int(input())
+# e=int(input())
+# f=(a+b+c+d+e)/5
+# if(f<35):
+#     print("additinal class is requied")
+# else:
+#     print("you are good to go")
+
+
+
+# a = 3
+# b = 2
+
+# print(a+b)
+
+# print(a-b)
+
+# print(a*b)
+
+
+
+
+# from flask import Flask, render_template, url_for,request
+# import pandas as pd, numpy as np 
+# import pickle
+
+# #load the model from disk
+# filename= 'model.pkl'
+# clf=pickle.load(open(filename, 'rd'))
+
+# app = Flask(__name__)
+
+# @app.route('/')
+# def home():
+#     return render_template('home.html')
+
+# @app.route('/predict', methods=['POST'])
+# def predict():
+#     if request.method == 'POST':
+#         me = request.formm['message']
+#         try:
+
+#             message = [float(x) for x in me.split(',')]
+#             vect = np.array(message).reshape(1,-1)
+#             my_prediction = clf.predict(vect)
+#             return render_template('result.html',prediction=my_prediction)
+#         except ValueError:
+
+#             return "Invalid input format. Please ensure the numbers are comma_sep"
+#         if __name__ == '__main__':
+#             app.run(debug=True)
+
+
