@@ -1,0 +1,190 @@
+#ord
+char_a = 'A'
+ascii_value = ord(char_a)
+print(ascii_value)
+
+#character
+ascii_value = 65
+character = chr(ascii_value)
+print(character)
+
+#operator
+#add+
+a=3
+b=2
+c=a+b
+print(c)
+
+#sub-
+a=3
+b=2
+c=a-b
+print(c)
+
+#mul*
+a=3
+b=2
+c=a*b
+print(c)
+
+#div/
+a=3
+b=2
+c=a/b
+print(c)
+
+#floor div//
+a=3
+b=2
+c=a//b
+print(c)
+
+#madulos%
+a=3
+b=2
+c=a%b
+print(c)
+
+#exponetion**
+a=3
+b=2
+c=a**b
+print(c)
+
+
+#assignment operator
+#equl
+a=3
+b=2
+c=a=b
+print(c)
+
+#add and assign
+a=3
+a+=5
+print(a)
+
+#sub and assign
+a=3
+a-=5
+print(a)
+
+#mul and assign
+a=3
+a*=5
+print(a)
+
+#div and assign
+a=3
+a/=5
+print(a)
+
+#floor div and assign //
+a=3
+a//=5
+print(a)
+
+#madulo and assign
+a=3
+a%=5
+print(a)
+
+#exponnetion and assign
+a=3
+a**=5
+print(a)
+
+
+#coparision operator
+
+#equal==
+a=5
+b=4
+print(a==b)
+
+#not equal too!=
+a=5
+b=4
+print(a!=b)
+
+#greterthan>
+a=5
+b=4
+print(a>b)
+
+#lessthan<
+a=5
+b=4
+print(a<b)
+
+#greterthan>=
+a=5
+b=4
+print(a>=b)
+
+#lessthan<=
+a=5
+b=4
+print(a<=b)
+
+
+
+#logical operator
+#and
+a=True
+b=False
+print(a and b)
+
+#or
+a=True
+b=False
+print(a or b)
+
+#not
+a=True
+b=False
+print(a or b)
+
+#input and output statement
+#input statement
+name=input()
+print("my name is", name)
+
+#int
+number=input("enter numer: ")
+number2=int(number)
+print(type(number2))
+
+name=input("enter your name: ")
+age=int(input("enter your age: "))
+print("my name is " +name + " my age is" ,age ,"iam ",age ,"years old!")
+
+
+#float
+number=input("enter numer: ")
+number2=float(number)
+print(type(number2))
+
+
+#seprate
+a=int(input("give a value: "))
+b=int(input("give b value: "))
+print(a,b,sep='-')
+
+#end 
+a=int(input("give a value: "))
+b=int(input("give b value: "))
+print(a,b,sep='-', end=(" ended here."))
+
+#example 1: string input and output
+#input jhon
+#output Hello,jhon!
+
+name=input("enter name: ")
+print("Hello", name, sep=', ',end="!")
+
+#example 2: string input and output
+#input 5
+#output "you eneterd number: "
+num=int(input("give me a num value"))
+print("you eneterrd number: ",num)
