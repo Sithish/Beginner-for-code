@@ -1,0 +1,175 @@
+#float input and output
+
+pi=float(input("value of pi: "))
+print("value of pi:",pi)
+
+#taking multiple input insingle line
+a=input()
+x, y, z = a.split()
+sum = int(x) + int(y) + int(z)
+print(sum)
+
+#specifying separete in output
+#input rio,22
+#output name:"rio,age:22"
+a=input()
+b=int(input())
+print("name:",a,",","age:",b)
+
+#end parameter in output
+n=int(input("enter n: "))
+print("coutdown1,2,3,4,5",end="blast off.")
+
+
+#arthimatic operator
+a=int(input("enter a values: "))
+b=int(input("enter a values: "))
+print("add :",a+b,"sub :",a-b,"mul :",a*b,"div :" ,a/b)
+
+
+#comparison operator
+a=int(input("enter a values: "))
+b=int(input("enter a values: "))
+print(a>b,a<b,a==b,a!=b)
+
+
+#formating output using f-string
+x=input("enter name : ")
+y=int(input("enter your age :"))
+print(f" name:{x},age:{y} years")
+
+
+#problem solving
+#finding the sum of two numbers #sample 
+# input:num1=5,num2=10
+#output: sum:15
+num1=int(input("enter the a value :"))
+num2=int(input("enter the b value :" ))
+sum=num1+num2
+print("sum:",sum)
+
+#finding the area of circle
+radius=int(input())
+print("area of the circle", 3.14*radius*radius)
+
+
+#swap the value of two variable without using theporary variable
+
+a=int(input("value of a: "))
+b=int(input("value of b: "))
+temp=a
+a=b
+temp=b
+print(f"value of a is:{a}")
+print(f"value of b is:{b}")
+
+
+#basic currency conventor
+#sample input :amt in used=100,rate used to eur=0.85
+#sample output:EUR:85.0
+a=int(input("amt in usd"))
+b=float(input("amt of eur"))
+print(a*b)
+
+
+#if statement
+weather="sunny"
+if weather == "rain":
+    print("play indoor game")
+else:
+    print("play robot")
+print("enjoy your game")
+
+
+#if elif else statement
+weather="sunny"
+chilmate="rainy"
+if weather == "rain":
+    print("play indoor game")
+elif weather =="sunny":
+    print("play cricket")
+elif weather=="sunny" and chilmate=="rainy":
+    print("u play indoor game")
+else:
+    print("play robot")
+print("enjoy your game")
+
+
+#nested if statement
+weather="sunny"
+chilmate="rainy"
+if weather == "sunny":
+    if chilmate=="rainy":
+        print("play indoor game")
+    else:
+        print("stay home")
+elif weather=="rainy":
+    print("go and play")
+elif chilmate=="rainy":
+    if chilmate=="rrian":
+        print("dont't play")
+    else:
+        print("eat and sleep")
+print("ok! enjoy you're game")
+
+
+#simple calculate program(project)
+num1=int(input("enter a num1 value: "))
+num2=int(input("enter a num2 value: "))
+operation=input("enter a operation: ")
+if operation=="+":
+    print(f"addtion of two number is: {num1+num2}")
+elif operation=="-":
+    print(f"sub of two number is: {num1-num2}")
+elif open=="*":
+    print(f"mul of two number is: {num1*num2}")
+else:
+    print(f"div of two number is: {num1/num2}")
+
+
+
+#string indexing
+str=("PYTHON")
+print(str[0])
+print(str[2])
+print(str[-1])
+
+s= ("sithishkuamr")
+print(s[::1])
+
+#string concatenation
+first_name="rio"
+last_name="sithish"
+full_name=first_name + " "+ last_name
+print(full_name)
+
+
+#string lenth
+string="hy how are you"
+print(len(string))
+
+#string methods
+#upper case
+r="hello"
+r2=r.upper()
+print(r2)
+#lower case
+r="HELLO"
+r2=r.lower()
+print(r2)
+#remove the white space(strip case)
+r="hello,  world"
+r2=r.strip()
+print(r2)
+#replce
+r="hello, world"
+r2=(r.replace('o','d'))
+print(r2)
+#count the number
+r="hello, world"
+print('saddbawkhhafkbfamabkaaaffbhddffb'.count('a'))
+
+
+#escape sequences
+s=('hi i\'m rio. my age is 22.')
+print(s)
