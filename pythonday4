@@ -1,0 +1,237 @@
+#vowels identify
+s=input()
+a=s.count('a')
+e=s.count('e')
+i=s.count('i')
+o=s.count('o')
+u=s.count('u')
+print(f"number of voules:{a+e+i+o+u}")
+
+
+#grade calculator
+m=int(input("marks in maths: "))
+s=int(input("marks in science: "))
+e=int(input("marks in english: "))
+
+total_marks=m+s+e
+average=total_marks/3
+
+percentage=(total_marks/300)*100
+grade=""
+
+if percentage> 90:
+    grade= "A"
+elif percentage > 80 and percentage <=90:
+    grade ="B"
+elif percentage > 70:
+    grade ="P"
+else:
+    grade ="F"
+#print(f"total_marks: {total_marks}\naverage: {average}\ngrade: {grade}")
+print("total_marks: ",total_marks)
+print("average: ",average)
+print("grade: ",grade)
+
+
+#palandrome
+s=input("give me a sting: ")
+reverse=s[::-1]
+if reverse==s:
+    print("it\'s a palandrome")
+else:
+    print("it\'s not a palandrome")
+
+
+#largest of three numbers
+a=int(input("value of a: "))
+b=int(input("value of b: "))
+c=int(input("value of c: "))
+
+#print("largest number is: ",max(a,b,c)) 
+largest=0
+if a>=b and a>=c:
+    print(a)
+elif b>=a and b>=c:
+    print(b)
+else:
+    print(c)
+
+#leap year
+year=int(input("enter a year: "))
+if(year%400==0) or (year%4==0 and year%100!=0):
+    print(year,"its a leap year")
+else:
+    print(year,"it\n's not a leap year")
+
+
+#temperature conventor
+temp=int(input("enter temparature: "))
+unit=input("enter unit (c/f/k): ")
+
+if unit=="c":
+    print("in fahrenheit: ", (temp*9/5) + 32)
+    print("in kelvin: ",(temp+273.15))
+elif unit=="f":
+    print("in clesius: ",(temp-32)*5/9)
+    print("in kelvin: ",(temp-32*5/9)+273.15)
+elif unit=="k":
+    print("in clesius: ",(temp+273.15))
+    print("in fahreheit: ",((temp+273.15)*9/5)+32)
+else:
+    print("pleae enter e,f and k only.")
+
+
+
+#while loop
+candies=10
+if candies>0:
+    print("give youre frd")
+    candies-=1
+    print(candies)
+
+
+#for loop
+candies=10
+for i in range(candies):
+    print("give youre frd")
+
+
+#for loop fro sequence
+#example1
+l=[1,2,3,4,5,6]
+for i in l:
+    print(l)
+#example2
+l=["hello,world"]
+for i in l:
+    print(l)
+#example3
+lenth=len("message")
+for i in range(lenth):
+    print(i)
+
+
+#nested loop
+for i in range(1,6):
+    for j in range(1,11):
+        print(f"{i}*{j}={i*j}")
+
+
+#break statement
+candies=10
+for i in range(candies):
+    print("candies to your fiend!")
+    if candies -i == 5:
+        print("only 5 candies only. stop distributing")
+        break
+
+
+#continue statement
+candies=10
+for i in range(candies):
+    print("candies to your fiend!")
+    if candies -i == 5:
+        continue
+        print("only 5 candies only. stop distributing")
+        break
+
+
+#print number n to 5 using while
+n=(int(input("give number: ")))
+i=1
+while i<=n:
+    print(i)
+    i=1+ i
+
+#print number n to 5 using for
+n=int(input("give n number: "))
+for i in range(1,n+1):
+    print(i)
+
+
+
+#print 1 to n natural number
+n=int(input("give n number: "))
+i=1
+sum=0
+while i<=n:
+    sum=i+sum
+    i+=1
+    print(sum)
+
+
+#print even numbers from 1 to n
+n=int(input("give n number: "))
+i=1
+while  i <=n:
+    if i%2 ==0:
+        print(i)   
+    i+=1
+
+
+#print odd numbers from 1 to n
+#print odd numbers from 1 to n
+n=int(input("give n number: "))
+i=1
+while  i <=n:
+    print(i)   
+    i+=2
+
+
+#multipilication of table number 3
+n=3
+for i in range(1,11):
+    sum=i*n
+    print(f"{i}*{n}={sum}")
+
+
+#calculate the factorial of a number
+n=int(input("give n number: "))
+fact=1
+for i in range(1, n + 1):
+    fact=fact*i
+    print("factorial of",n, "is",fact)
+
+
+#return statement
+def add(a,b):
+    return a+b
+result=add(3,5)
+print(result)
+
+
+#keyword argument
+def personal_info(name,age):
+    print("name:",name)
+    print("age:",age)
+personal_info(age=30,name="rio")
+
+
+#default argument
+def great_user(name,greating="hello"):
+    return greating + "," + name+"!"
+greating1=great_user("alice")
+greating2=great_user("rio","hi")
+print(greating1)
+print(greating2)
+
+
+#finding the sum of two numbers
+a=int(input())
+b=int(input())
+def add2numbers(a,b):
+    print(a+b)
+add2numbers(a,b) 
+
+
+#finding the area of thhe circle
+radius=int(input())
+def area_circle(r=1):
+    criclearea=3.14*r*r
+    print(criclearea)
+radius=1
+area_circle(radius)
+#print("area of the circle", 3.14*radius*radius)
+
+
+
